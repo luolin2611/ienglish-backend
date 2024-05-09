@@ -1,0 +1,19 @@
+server:
+  port: 10010
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mistero.cn:13308/ienglish?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+#    username: ienglish
+#    password: ienglish321
+    username: root
+    password: rollin123
+
+# ========================mybatis===================
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: cn.rollin.ienglish.model.entity
+  configuration:
+    map-underscore-to-camel-case: true
